@@ -1,0 +1,27 @@
+@import "/src/app/app.component.scss";
+
+* {
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  padding: 30px;
+  font-size: $font-size;
+}
+
+.lyrics,
+.lyrics-found,
+.lyrics-not-found {
+  text-align: center;
+}
+
+.lyrics {
+  color: $extra-color;
+  white-space: pre-wrap;
+  text-align: center;
+}
+
+.lyrics-found {
+  color: $main-color;
+}
+
+.lyrics-not-found {
+  color: $extra-color;
+}

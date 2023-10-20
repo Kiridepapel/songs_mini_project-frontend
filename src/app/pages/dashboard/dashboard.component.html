@@ -1,0 +1,21 @@
+<div class="main-container">
+    <div class="search-container">
+        <div class="search-box">
+            <div class="search-field">
+                <input [(ngModel)]="query" (keyup.enter)="searchTracks()" placeholder="Buscar canción..." class="input"
+                    type="text">
+            </div>
+            <div class="search-btn-container">
+                <button class="search-btn" (click)="searchTracks()">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </div>
+        <div class="search-results">
+            <app-list-card *ngFor="let track of tracks" [track]="track" (playTrack)="playTrack($event)"></app-list-card>
+        </div>
+    </div>
+    <div class="lyrics-container">
+        <app-lyrics></app-lyrics>
+    </div>
+</div>

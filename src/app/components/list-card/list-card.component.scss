@@ -1,0 +1,41 @@
+@import "/src/app/app.component.scss";
+
+.track-container {
+  background-color: $bg-color;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  gap: 20px;
+  border: none;
+
+  .track-img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .track-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+
+    .track-name,
+    .track-artist {
+      margin: 0;
+      text-align: start;
+    }
+
+    .track-name {
+      color: #ffffff;
+    }
+
+    .track-artist {
+      color: #bebebe;
+    }
+  }
+}
+
+.track-container:hover {
+  background-color: #2a2a2a;
+  cursor: pointer;
+}
